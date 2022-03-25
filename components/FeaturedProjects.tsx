@@ -1,15 +1,19 @@
-import ProjectCard from "./ProjectCard";
-import { Link } from "react-router-dom";
-import etchImage from "../resources/nick-chmela-software-developer-hiking.jpg";
-import { featuredProjects } from "../resources/projects.js";
+import ProjectCard from './ProjectCard'
+import etchImage from '../resources/nick-chmela-software-developer-hiking.jpg'
+import { featuredProjects } from '../lib/projects.js'
+import Image from 'next/image'
 
-export default function FeaturedProjects(props) {
+interface FeaturedProjectsProps {
+  id?: string
+}
+
+export default function FeaturedProjects(props: FeaturedProjectsProps) {
   return (
     <div id={props.id} className="flex items-center py-28">
       {/* Content */}
-      <div className="max-w-screen-xl mx-auto w-full px-6 display flex flex-col items-center gap-8">
-        <div className="max-w-2xl lg:text-center flex flex-col gap-6">
-          <h2 className="text-2xl text-neutral-500 font-bold  text-gradient">
+      <div className="display mx-auto flex w-full max-w-screen-xl flex-col items-center gap-8 px-6">
+        <div className="flex max-w-2xl flex-col gap-6 lg:text-center">
+          <h2 className="text-gradient text-2xl font-bold  text-neutral-500">
             FEATURED PROJECTS
           </h2>
           <p className=" text-6xl font-bold text-neutral-900 ">
@@ -19,33 +23,38 @@ export default function FeaturedProjects(props) {
 
         {/* projects grid */}
 
-        <ul className="grid lg:grid-cols-12 gap-4 grid-flow-row grid-rows-2">
-          <li className="col-span-3 row-span-2">
-            <img
-              className="rounded-xl w-full h-full object-cover "
-              src={etchImage}
-              alt="etch a sketch project screenshot"
+        <ul className=" grid h-[40em] w-full grid-flow-row grid-rows-2 gap-4 lg:grid-cols-12">
+          <li className="relative col-span-3 row-span-2 h-full">
+            <Image
+              className="rounded-xl "
+              src="/images/nick-chmela-software-developer-hiking.jpg"
+              alt="Nick hiking in the wintery woods of Maine"
+              layout="fill"
+              objectFit="cover"
             />
           </li>
-          <li className="col-span-6 row-span-2">
-            <img
-              className="rounded-xl  w-full h-full object-cover"
-              src={etchImage}
-              alt="etch a sketch project screenshot"
+          <li className="relative col-span-6 row-span-2">
+            <Image
+              className="h-full w-full rounded-xl object-cover "
+              src="/images/nick-chmela-software-developer-hiking.jpg"
+              alt="Nick hiking in the wintery woods of Maine"
+              layout="fill"
             />
           </li>
-          <li className="col-span-3 row-span-1">
-            <img
-              className="rounded-xl  w-full h-full object-cover"
-              src={etchImage}
-              alt="etch a sketch project screenshot"
+          <li className="relative col-span-3 row-span-1">
+            <Image
+              className="h-full w-full rounded-xl object-cover "
+              src="/images/nick-chmela-software-developer-hiking.jpg"
+              alt="Nick hiking in the wintery woods of Maine"
+              layout="fill"
             />
           </li>
-          <li className="col-span-3 row-span-1">
-            <img
-              className="rounded-xl  w-full h-full object-cover"
-              src={etchImage}
-              alt="etch a sketch project screenshot"
+          <li className="relative col-span-3 row-span-1">
+            <Image
+              className="h-full w-full rounded-xl object-cover "
+              src="/images/nick-chmela-software-developer-hiking.jpg"
+              alt="Nick hiking in the wintery woods of Maine"
+              layout="fill"
             />
           </li>
         </ul>
@@ -59,10 +68,10 @@ export default function FeaturedProjects(props) {
                 project={featuredProject}
                 reversed={i % 2 === 0}
               />
-            );
+            )
           })}
         </ul>
       </div>
     </div>
-  );
+  )
 }

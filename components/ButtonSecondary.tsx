@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa'
 
-interface SecondaryButtonProps {
+interface SecondaryButtonProps extends React.ComponentPropsWithoutRef<'a'> {
   content: string
   href: string
   isExternal?: boolean
@@ -12,7 +12,7 @@ export default function ButtonSecondary({
   content,
   href,
   isGradient,
-  ...rest
+  ...secondaryButtonProps
 }: SecondaryButtonProps) {
   return isGradient ? (
     <a
@@ -22,7 +22,7 @@ export default function ButtonSecondary({
           : ' group flex items-center justify-center gap-2 py-4 px-6 text-lg font-bold  text-neutral-900'
       }
       href={href}
-      {...rest}
+      {...secondaryButtonProps}
     >
       {content}
       <span className=" transition group-hover:translate-x-1 group-active:translate-x-5">
@@ -37,7 +37,7 @@ export default function ButtonSecondary({
             ? ' text-gradient group flex items-center justify-center gap-2 py-4 px-6 text-lg font-bold '
             : ' group flex items-center justify-center gap-2 py-4 px-6 text-lg font-bold  text-neutral-900'
         }
-        {...rest}
+        {...secondaryButtonProps}
       >
         {content}
 
