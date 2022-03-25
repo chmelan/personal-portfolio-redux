@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 
 import HomeHero from '../components/HomeHero'
-
-// import Skills from '../components/Skills'
+import HomeAbout from '../components/HomeAbout'
+import Skills from '../components/Skills'
 // import FooterCTA from '../components/FooterCTA'
 
-import HomeAbout from '../components/HomeAbout'
 // import FeaturedProjects from '../components/FeaturedProjects'
 
 const Home: NextPage = () => {
@@ -13,10 +12,10 @@ const Home: NextPage = () => {
     <main>
       <HomeHero />
       <HomeAbout />
-      {/* <FeaturedProjects id="projects" />
-     
+      {/* <FeaturedProjects id="projects" /> */}
+
       <Skills />
-      <FooterCTA /> */}
+      {/* <FooterCTA /> */}
     </main>
   )
 }

@@ -6,6 +6,10 @@
 
 /* Random Colors */
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   @keyframes shift {
     0% {
