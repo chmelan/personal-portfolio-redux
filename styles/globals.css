@@ -1,3 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Random Colors */
+
+@layer components {
+  @keyframes shift {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  .text-gradient:hover,
+  .text-gradient-hover {
+    background-image: linear-gradient(
+      45deg,
+      var(--complimentary1) 25%,
+      var(--complimentary2)
+    );
+    background-size: 150%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+}
+
+@keyframes shift {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+:root {
+  --base: hsl(var(--hue, 330), 95%, 50%);
+  --complimentary1: hsl(var(--hue2, 360), 95%, 50%);
+  --complimentary2: hsl(var(--hue3, 30), 95%, 50%);
+  --oppositeHue: hsl(var(--hue4, 360), 95%, 5%);
+  --oppositeHue2: hsl(var(--hue5, 360), 95%, 1%);
+}
+
+.gradient-background {
+  animation: shift 5s ease-in-out infinite;
+  background-image: linear-gradient(
+    45deg,
+    var(--base) 25%,
+    var(--complimentary2)
+  );
+
+  background-size: 150%;
+}
+
+.icon-gradient::before {
+  font-size: 72px;
+  background: gradient(linear, left top, left bottom, from(#f00), to(#333));
+  -webkit-text-fill-color: transparent;
+  display: initial;
+}
+.text-gradient {
+  animation: shift 5s ease-in-out infinite;
+  background-image: linear-gradient(
+    45deg,
+    var(--base) 25%,
+    var(--complimentary2)
+  );
+
+  background-size: 150%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.text-gradient:hover,
+.text-gradient-hover {
+  background-image: linear-gradient(
+    45deg,
+    var(--complimentary1) 25%,
+    var(--complimentary2)
+  );
+}
+
+.text-gradient-no-hover {
+  animation: shift 5s ease-in-out infinite;
+  background-image: linear-gradient(
+    45deg,
+    var(--base) 25%,
+    var(--complimentary2)
+  );
+
+  background-size: 150%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* Page Transitions */
+.fade-enter {
+  opacity: 0;
+  transform: translate(0, 25px);
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+
+  transition: opacity 750ms ease-out, transform 300ms ease;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: translate(0, 30px);
+
+  transition: opacity 750ms ease-out, transform 300ms ease;
+}
