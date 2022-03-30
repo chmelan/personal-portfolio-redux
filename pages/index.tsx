@@ -9,14 +9,13 @@ import FeaturedProjects from '../components/FeaturedProjects'
 
 const Home: NextPage = () => {
   return (
-    <main>
+    <>
       <HomeHero />
-      <HomeAbout />
       <FeaturedProjects id="projects" />
-
+      <HomeAbout />
       <Skills />
       {/* <FooterCTA /> */}
-    </main>
+    </>
   )
 }
 

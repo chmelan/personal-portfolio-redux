@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Head from 'next/head'
 import TopNav from './TopNav'
 import { random } from '../lib/helpers'
 import Footer from './Footer'
@@ -7,6 +7,8 @@ import Footer from './Footer'
 type DashboardLayoutProps = {
   children: React.ReactNode
 }
+
+export const siteTitle = 'Nick Chmela | Full Stack Developer'
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const [hues, setHues] = useState({
@@ -39,8 +41,24 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   }
   return (
     <div>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Hi, I'm Nick! I'm a full stack developer who can't stop tinkering."
+        />
+        <meta
+          property="og:image"
+          content={`https://og-image.vercel.app/${encodeURI(
+            siteTitle
+          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+        />
+        <meta name="og:title" content={siteTitle} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <TopNav setRandomHue={setRandomHue} />
-      {children}
+
+      <main className="py-48">{children}</main>
       <Footer />
     </div>
   )

@@ -14,6 +14,7 @@ const navigation = [
   { name: 'Projects', href: '/projects' },
   { name: 'Resume', href: '/Nick Chmela Resume.pdf', external: true },
   { name: 'Contact', href: '/contact' },
+  { name: 'Writing', href: '/posts' },
 ]
 
 export default function TopNav({ setRandomHue }: HeaderProps) {

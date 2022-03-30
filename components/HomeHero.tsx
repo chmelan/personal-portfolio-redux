@@ -1,17 +1,17 @@
-import portrait from "../resources/nick-chmela-software-developer-family-portrait.jpg";
-import Button from "./Button";
-import ButtonSecondary from "./ButtonSecondary";
-import { FaEye } from "react-icons/fa";
+import Button from './Button'
+import ButtonSecondary from './ButtonSecondary'
+import { FaEye } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function HomeHero() {
   return (
-    <div className=" h-screen flex items-center ">
+    <div className=" flex h-screen items-start ">
       {/* Content */}
-      <div className="max-w-screen-xl mx-auto w-full  grid md:grid-cols-2 p-6">
-        <div className="flex flex-col gap-6 justify-center items-start">
+      <div className="mx-auto grid w-full  max-w-screen-xl p-6 md:grid-cols-2">
+        <div className="flex flex-col items-start justify-center gap-6">
           <h1 className="  text-7xl font-bold text-neutral-900 ">
-            I’m a curious{" "}
-            <span className="text-gradient-no-hover">full stack developer</span>{" "}
+            I’m a curious{' '}
+            <span className="text-gradient-no-hover">full stack developer</span>{' '}
             <br /> who can’t stop tinkering.
           </h1>
           <p className="text-2xl text-neutral-600 ">
@@ -23,10 +23,15 @@ export default function HomeHero() {
             <ButtonSecondary content="More about me" href="#about" />
           </div>
         </div>
-        <div className="p-6 flex justify-center">
-          <FaEye size="32em" className="text-neutral-900" />
+        <div className="relative m-auto flex aspect-square  w-2/3 items-center justify-center p-6">
+          <Image
+            layout="fill"
+            className=" rounded-full "
+            src="/images/main_portrait.jpg"
+            alt="nick smiling"
+          />
         </div>
       </div>
     </div>
-  );
+  )
 }

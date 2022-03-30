@@ -116,7 +116,7 @@ export default function Skills() {
 
       <div className="mx-auto w-full max-w-screen-xl px-6">
         <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 ">
-          <li className="flex flex-col items-center gap-4">
+          <li className="flex flex-col items-center gap-4 lg:items-start">
             <FaDesktop className="gradient-background h-20 w-20 rounded-xl fill-white p-2" />
 
             <h3 className="text-2xl font-bold text-neutral-900">
@@ -134,7 +134,7 @@ export default function Skills() {
             </ul>
           </li>
 
-          <li className="flex flex-col items-center gap-4">
+          <li className="flex flex-col items-center gap-4 lg:items-start">
             <FaDatabase className="gradient-background h-20 w-20 rounded-xl fill-white p-2 " />
 
             <h3 className="text-2xl font-bold text-neutral-900">
@@ -152,7 +152,7 @@ export default function Skills() {
             </ul>
           </li>
 
-          <li className="flex flex-col items-center gap-4">
+          <li className="flex flex-col items-center gap-4 lg:items-start">
             <FaCodeBranch className="gradient-background h-20 w-20 rounded-xl fill-white p-2" />
             <h3 className="text-2xl font-bold text-neutral-900">
               Other skills
