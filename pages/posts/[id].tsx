@@ -26,12 +26,29 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1 className="">{postData.title}</h1>
-        <div className="">
+      <article className="mx-auto flex w-full max-w-screen-md flex-col  gap-8 p-6 text-center">
+        <div className="text-gradient  text-xl  font-bold text-neutral-500">
           <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </div>{' '}
+        <h1 className="  text-4xl font-bold text-neutral-900">
+          {postData.title}
+        </h1>
+        <p>
+          {postData.tags.map((tag: string, i: number, tags: string[]) => {
+            return (
+              <span key={tag} className="font-semibold text-neutral-500">
+                {tag + ' '}
+                {tags.length - 1 === i ? null : (
+                  <span className="text-neutral-400">• </span>
+                )}
+              </span>
+            )
+          })}
+        </p>
+        <div
+          className="prose self-center pt-32 text-left"
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
       </article>
     </>
   )

@@ -26,7 +26,7 @@ export default function PostCard({
     <article className=" grid grid-cols-5 items-center gap-8 rounded-xl  bg-neutral-900">
       <div className="relative col-span-2 aspect-square h-full border-r-4 border-white ">
         <Image
-          src="/images/weather_app_pro_1997_v1_3.png"
+          src={featuredImage}
           alt="some pic"
           layout="fill"
           objectFit="cover"
@@ -45,7 +45,7 @@ export default function PostCard({
 
         <div className="items end flex justify-between gap-4 justify-self-end">
           {/* Button */}
-          <Link href="/">
+          <Link href={`/posts/${id}`}>
             <a className=" group flex items-center justify-center gap-2   text-lg font-semibold  text-white">
               Continue reading
               <span className=" transition group-hover:translate-x-1 group-active:translate-x-5">
@@ -55,18 +55,16 @@ export default function PostCard({
           </Link>
         </div>
         <p>
-          {['javascript', 'react', 'nodejs'].map(
-            (tech: string, i: number, techStack: string[]) => {
-              return (
-                <span key={tech} className="font-semibold text-neutral-500">
-                  {tech + ' '}
-                  {techStack.length - 1 === i ? null : (
-                    <span className="text-neutral-400">• </span>
-                  )}
-                </span>
-              )
-            }
-          )}
+          {tags.map((tag: string, i: number, tags: string[]) => {
+            return (
+              <span key={tag} className="font-semibold text-neutral-500">
+                {tag + ' '}
+                {tags.length - 1 === i ? null : (
+                  <span className="text-neutral-400">• </span>
+                )}
+              </span>
+            )
+          })}
         </p>
       </div>
     </article>

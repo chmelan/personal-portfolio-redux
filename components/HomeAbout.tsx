@@ -39,7 +39,7 @@ export default function HomeAbout() {
           <li className="relative col-span-7 row-span-2">
             <Image
               className="h-full w-full rounded-xl object-cover "
-              src="/images/nick-chmela-software-developer-hiking.jpg"
+              src="/images/IMG-20191010-WA0002.jpg"
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
             />
@@ -47,7 +47,7 @@ export default function HomeAbout() {
           <li className="relative col-span-3 row-span-1">
             <Image
               className="h-full  w-full rounded-xl object-cover"
-              src="/images/nick-chmela-software-developer-hiking.jpg"
+              src="/images/nick-chmela-000.jpg"
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
             />
@@ -63,7 +63,7 @@ export default function HomeAbout() {
           <li className="relative col-span-5 row-span-1">
             <Image
               className="h-full  w-full rounded-xl object-cover"
-              src="/images/nick-chmela-software-developer-hiking.jpg"
+              src="/images/nick-chmela-002.jpg"
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
             />
