@@ -129,7 +129,9 @@ export default function Skills() {
             </p> */}
             <ul className="flex flex-col gap-2 ">
               {frontEndSkills.map((skill) => {
-                return <Skill name={skill.name} Icon={skill.Icon} />
+                return (
+                  <Skill key={skill.name} name={skill.name} Icon={skill.Icon} />
+                )
               })}
             </ul>
           </li>
@@ -147,7 +149,9 @@ export default function Skills() {
             </p> */}
             <ul className="flex flex-col gap-2 ">
               {backEndSkills.map((skill) => {
-                return <Skill name={skill.name} Icon={skill.Icon} />
+                return (
+                  <Skill key={skill.name} name={skill.name} Icon={skill.Icon} />
+                )
               })}
             </ul>
           </li>
@@ -165,7 +169,9 @@ export default function Skills() {
             </p> */}
             <ul className="flex flex-col gap-2 ">
               {otherSkills.map((skill) => {
-                return <Skill name={skill.name} Icon={skill.Icon} />
+                return (
+                  <Skill key={skill.name} name={skill.name} Icon={skill.Icon} />
+                )
               })}
             </ul>
           </li>
