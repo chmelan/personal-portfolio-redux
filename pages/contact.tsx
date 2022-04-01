@@ -2,7 +2,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 export default function Contact() {
   return (
-    <div className="mx-auto w-full max-w-screen-xl px-6">
+    <div className="mx-auto w-full max-w-screen-xl px-6 pb-32">
       <div className="grid md:grid-cols-2 ">
         {/* Left side */}
         <div className="flex max-w-xl flex-col gap-8 pt-4 md:pt-0 md:pr-4 ">

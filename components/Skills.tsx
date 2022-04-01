@@ -28,7 +28,7 @@ const frontEndSkills = [
     Icon: FaReact,
   },
   {
-    name: 'Tailwind CSS',
+    name: 'TailwindCSS',
     color: 'fill-[#15b8c5]',
     Icon: SiTailwindcss,
   },
@@ -38,11 +38,6 @@ const frontEndSkills = [
     Icon: FaHtml5,
   },
 
-  {
-    name: 'JavaScript',
-    color: 'fill-[#e5ca55]',
-    Icon: DiJavascript1,
-  },
   {
     name: 'Elementor',
     color: 'fill-[#cf315f]',
@@ -63,7 +58,7 @@ const backEndSkills = [
   },
   {
     name: 'Express',
-    color: 'fill-[#000000]',
+    color: 'fill-[#ffffff]',
     Icon: SiExpress,
   },
   {
@@ -86,97 +81,115 @@ const otherSkills = [
   },
   {
     name: 'Linux & Bash',
-    color: 'fill-[#000000]',
+    color: 'fill-[#ffffff]',
     Icon: FaLinux,
+  },
+  {
+    name: 'Git & Github',
+    color: 'fill-[#ffffff]',
+    Icon: FaGithub,
   },
   {
     name: 'ESLint',
     color: 'fill-[#482fbd]',
     Icon: SiEslint,
   },
-  {
-    name: 'Git & Github',
-    color: 'fill-[#000000]',
-    Icon: FaGithub,
-  },
 ]
 
 export default function Skills() {
   return (
-    <div className="display mx-auto flex w-full max-w-screen-xl flex-col items-end gap-16 px-6">
+    <div className="display mx-auto flex w-full max-w-screen-xl flex-col items-center gap-16 px-6 pb-28">
       {/* Content */}
-      <div className="flex max-w-2xl flex-col gap-6 lg:text-right">
+      <div className="flex max-w-2xl flex-col gap-6 lg:text-center">
         <h2 className="text-gradient text-2xl font-bold  text-neutral-500">
           MY SKILLS
         </h2>
-        <p className=" text-6xl font-bold text-neutral-900 ">
+        <p className=" text-6xl font-bold text-neutral-900  ">
           I&apos;m always learning something new!
         </p>
       </div>
 
-      <div className="mx-auto w-full max-w-screen-xl px-6">
-        <ul className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 ">
-          <li className="flex flex-col items-center gap-4 lg:items-start">
-            <FaDesktop className="gradient-background h-20 w-20 rounded-xl fill-white p-2" />
+      <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <li className="gradient-background rounded-lg outline-offset-4  ">
+          <div className=" flex h-full w-full -translate-x-1 -translate-y-1 flex-col gap-4 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white ">
+            {' '}
+            <div className="flex items-end gap-4 border-b-2 border-neutral-700 pb-2">
+              <FaDesktop className="gradient-background h-20 w-20 rounded-xl fill-white p-2" />
 
-            <h3 className="text-2xl font-bold text-neutral-900">
-              Front End Skills
-            </h3>
-
-            {/* <p className="text-base  text-neutral-400  ">
-              At Sparrow, I helped over 150 entrepreneurs and small businesses
-              launch accessible, performant, and SEO-friendly websites.
-            </p> */}
-            <ul className="flex flex-col gap-2 ">
+              <h3 className="text-3xl font-bold text-white">
+                {' '}
+                Front End Skills
+              </h3>
+            </div>
+            <p className="  text-left font-normal text-neutral-400 ">
+              Accessibility, Design, Copywriting, DOM Manipulation
+            </p>
+            <ul className="grid grid-cols-2  gap-2 ">
               {frontEndSkills.map((skill) => {
                 return (
-                  <Skill key={skill.name} name={skill.name} Icon={skill.Icon} />
+                  <Skill
+                    key={skill.name}
+                    name={skill.name}
+                    Icon={skill.Icon}
+                    color={skill.color}
+                  />
                 )
               })}
             </ul>
-          </li>
+          </div>
+        </li>
 
-          <li className="flex flex-col items-center gap-4 lg:items-start">
-            <FaDatabase className="gradient-background h-20 w-20 rounded-xl fill-white p-2 " />
-
-            <h3 className="text-2xl font-bold text-neutral-900">
-              Back End Skills
-            </h3>
-            {/* 
-            <p className="text-base  text-neutral-400  ">
-              I used React, MongoDB, and NodeJS to improve user experiences for
-              the world’s largest peer-to-peer motorcycle rental company.
-            </p> */}
-            <ul className="flex flex-col gap-2 ">
+        <li className="gradient-background rounded-lg outline-offset-4  ">
+          <div className=" flex h-full w-full -translate-x-1 -translate-y-1 flex-col gap-4 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white ">
+            {' '}
+            <div className="flex items-end gap-4 border-b-2 border-neutral-700 pb-2">
+              <FaDatabase className="gradient-background h-20 w-20 rounded-xl fill-white p-2 " />
+              <h3 className="text-3xl font-bold text-white">
+                {' '}
+                Back End Skills
+              </h3>
+            </div>
+            <p className=" text-left font-normal text-neutral-400 ">
+              User Authentication, DB Architecture, REST API, CRUD
+            </p>
+            <ul className="grid grid-cols-2  gap-2 ">
               {backEndSkills.map((skill) => {
                 return (
-                  <Skill key={skill.name} name={skill.name} Icon={skill.Icon} />
+                  <Skill
+                    key={skill.name}
+                    name={skill.name}
+                    Icon={skill.Icon}
+                    color={skill.color}
+                  />
                 )
               })}
             </ul>
-          </li>
-
-          <li className="flex flex-col items-center gap-4 lg:items-start">
-            <FaCodeBranch className="gradient-background h-20 w-20 rounded-xl fill-white p-2" />
-            <h3 className="text-2xl font-bold text-neutral-900">
-              Other skills
-            </h3>
-
-            {/* <p className="text-base  text-neutral-400  ">
-              At Clair Global, I worked with music tours including Sting, Bon
-              Jovi, and Florence and the Machine to help bring reinforced audio
-              to crowds of over 70,000 people at stadiums.
-            </p> */}
-            <ul className="flex flex-col gap-2 ">
+          </div>
+        </li>
+        <li className="gradient-background rounded-lg outline-offset-4  ">
+          <div className=" flex h-full w-full -translate-x-1 -translate-y-1 flex-col gap-4 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white ">
+            <div className="flex items-end gap-4 border-b-2 border-neutral-700 pb-2">
+              <FaCodeBranch className="gradient-background h-20 w-20 rounded-xl fill-white p-2" />
+              <h3 className="text-3xl font-bold text-white">Other skills</h3>
+            </div>
+            <p className=" text-left font-normal text-neutral-400 ">
+              MVC, Communication, Problem Solving, ES6 Modules
+            </p>
+            <ul className="grid grid-cols-2  gap-2 ">
               {otherSkills.map((skill) => {
                 return (
-                  <Skill key={skill.name} name={skill.name} Icon={skill.Icon} />
+                  <Skill
+                    key={skill.name}
+                    name={skill.name}
+                    Icon={skill.Icon}
+                    color={skill.color}
+                  />
                 )
               })}
             </ul>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </div>
   )
 }

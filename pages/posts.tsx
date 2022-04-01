@@ -16,11 +16,6 @@ interface postCardProps {
 }
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
-  // Here is where you might grab API data instead of grabbing data from the FS
-  // getStaticProps only runs on the server-side.
-
-  // only allowed in pages
-  // only runs at build time. e.g. no dynamic api info.
   return {
     props: {
       allPostsData,
@@ -28,14 +23,14 @@ export async function getStaticProps() {
   }
 }
 
-export default function Posts({ allPostsData }) {
+export default function Posts({ allPostsData }: any) {
   return (
     <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
 
-      <div className="display mx-auto flex w-full max-w-screen-xl flex-col items-center gap-8 px-6">
+      <div className="display mx-auto mb-48 flex w-full max-w-screen-xl flex-col items-center gap-8 px-6">
         <section className="flex max-w-2xl flex-col gap-6 lg:text-center">
           <h1 className="text-gradient text-2xl font-bold  text-neutral-500">
             BLOG POSTS

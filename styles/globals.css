@@ -48,6 +48,17 @@ html {
     background-size: 150%;
   }
 
+  .gradient-background-opposite {
+    animation: shift 5s ease-in-out infinite;
+    background-image: linear-gradient(
+      45deg,
+      var(--oppositeHue) 25%,
+      var(--oppositeHue2)
+    );
+
+    background-size: 150%;
+  }
+
   .icon-gradient::before {
     font-size: 72px;
     background: gradient(linear, left top, left bottom, from(#f00), to(#333));
@@ -70,7 +81,6 @@ html {
     -moz-text-fill-color: transparent;
   }
 
-  .text-gradient:hover,
   .text-gradient-hover {
     background-image: linear-gradient(
       45deg,
@@ -111,8 +121,8 @@ html {
   --base: hsl(var(--hue, 330), 95%, 50%);
   --complimentary1: hsl(var(--hue2, 360), 95%, 50%);
   --complimentary2: hsl(var(--hue3, 30), 95%, 50%);
-  --oppositeHue: hsl(var(--hue4, 360), 95%, 5%);
-  --oppositeHue2: hsl(var(--hue5, 360), 95%, 1%);
+  --oppositeHue: hsl(var(--hue4, 150), 95%, 40%);
+  --oppositeHue2: hsl(var(--hue5, 180), 95%, 40%);
 }
 
 /* Page Transitions */

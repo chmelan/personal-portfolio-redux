@@ -1,4 +1,3 @@
-import FooterCTA from '../components/FooterCTA'
 import ProjectCardSmall from '../components/ProjectCardSmall'
 import { featuredProjects } from '../lib/projects.js'
 

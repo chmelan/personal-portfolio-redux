@@ -3,7 +3,7 @@ import Date from '../../components/Date'
 import Head from 'next/head'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   const postData = await getPostData(params.id)
   return {
     props: {
@@ -20,13 +20,13 @@ export async function getStaticPaths() {
   }
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData }: any) {
   return (
     <>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className="mx-auto flex w-full max-w-screen-md flex-col  gap-8 p-6 text-center">
+      <article className="mx-auto mb-48 flex w-full max-w-screen-md  flex-col gap-8 p-6 text-center">
         <div className="text-gradient  text-xl  font-bold text-neutral-500">
           <Date dateString={postData.date} />
         </div>{' '}

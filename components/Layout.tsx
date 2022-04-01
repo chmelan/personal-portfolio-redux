@@ -58,7 +58,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
       </Head>
       <TopNav setRandomHue={setRandomHue} />
 
-      <main className="py-48">{children}</main>
+      <main className="pt-48">{children}</main>
       <Footer />
     </div>
   )

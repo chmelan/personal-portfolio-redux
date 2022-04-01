@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function HomeHero() {
   return (
-    <div className=" flex h-screen items-start ">
+    <div className=" flex h-[80vh] items-start ">
       {/* Content */}
       <div className="mx-auto grid w-full  max-w-screen-xl p-6 md:grid-cols-2">
         <div className="flex flex-col items-start justify-center gap-6">

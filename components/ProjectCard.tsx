@@ -19,13 +19,12 @@ interface ProjectCardProps {
 export default function ProjectCard(props: ProjectCardProps) {
   return (
     <li className="grid grid-cols-3 items-center gap-8 py-8">
-      <div className="relative col-span-2 h-full">
+      <div className="gradient-background-opposite relative col-span-2 h-full rounded-xl">
         <Image
           src={props.project.imageURL}
           alt="some pic"
           layout="fill"
           objectFit="cover"
-          className="rounded-xl shadow-lg"
         />
       </div>
 
@@ -60,16 +59,16 @@ export default function ProjectCard(props: ProjectCardProps) {
 
         <div className="flex justify-between gap-4">
           <a
-            className=" text-gradient group flex items-center justify-center gap-2 py-4  text-lg font-bold "
+            className="gradient-background mt-2 rounded-lg outline-offset-4 "
             href={props.project.projectLink}
             target="_blank"
             rel="noreferrer"
           >
-            View live demo
-            <span className=" transition group-hover:translate-x-1 group-active:translate-x-5">
-              <FaArrowRight />
+            <span className="  block -translate-x-1 -translate-y-1 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white transition-transform  hover:-translate-x-1.5 hover:-translate-y-1.5 active:-translate-x-0 active:-translate-y-0">
+              View live demo
             </span>
           </a>
+
           <a
             href={props.project.githubLink}
             target="_blank"

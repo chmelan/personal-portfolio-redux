@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import FooterCTA from '../components/FooterCTA'
 
 export default function About() {
   return (

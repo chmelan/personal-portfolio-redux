@@ -24,35 +24,31 @@ export default function FeaturedProjects(props: FeaturedProjectsProps) {
         {/* projects grid */}
 
         <ul className=" grid h-[40em] w-full grid-flow-row grid-rows-2 gap-4 lg:grid-cols-12">
-          <li className="relative col-span-3 row-span-2 h-full">
+          <li className="gradient-background-opposite relative col-span-3 row-span-2 h-full rounded-xl">
             <Image
-              className="rounded-xl "
-              src="/images/nick-chmela-software-developer-hiking.jpg"
+              src="/images/apm-transparent.png "
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
               objectFit="cover"
             />
           </li>
-          <li className="relative col-span-6 row-span-2">
+          <li className="gradient-background-opposite relative col-span-6 row-span-2 rounded-xl">
             <Image
-              className="h-full w-full rounded-xl object-cover "
-              src="/images/nick-chmela-software-developer-hiking.jpg"
+              src="/images/ns-transparent.png"
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
             />
           </li>
-          <li className="relative col-span-3 row-span-1">
+          <li className="gradient-background-opposite relative col-span-3 row-span-1 rounded-xl">
             <Image
-              className="h-full w-full rounded-xl object-cover "
-              src="/images/nick-chmela-software-developer-hiking.jpg"
+              src="/images/cc-transparent.png"
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
             />
           </li>
-          <li className="relative col-span-3 row-span-1">
+          <li className="gradient-background-opposite relative col-span-3 row-span-1 rounded-xl">
             <Image
-              className="h-full w-full rounded-xl object-cover "
-              src="/images/nick-chmela-software-developer-hiking.jpg"
+              src="/images/mn-transparent.png"
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
             />
