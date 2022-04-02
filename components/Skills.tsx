@@ -101,24 +101,21 @@ export default function Skills() {
     <div className="display mx-auto flex w-full max-w-screen-xl flex-col items-center gap-16 px-6 pb-28">
       {/* Content */}
       <div className="flex max-w-2xl flex-col gap-6 lg:text-center">
-        <h2 className="text-gradient text-2xl font-bold  text-neutral-500">
+        <h2 className="text-gradient text-xl font-bold md:text-2xl  ">
           MY SKILLS
         </h2>
-        <p className=" text-6xl font-bold text-neutral-900  ">
+        <p className=" text-4xl font-bold text-neutral-900 md:text-6xl ">
           I&apos;m always learning something new!
         </p>
       </div>
 
-      <ul className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid gap-8 pl-[4px] md:grid-cols-2 lg:grid-cols-3">
         <li className="gradient-background rounded-lg outline-offset-4  ">
           <div className=" flex h-full w-full -translate-x-1 -translate-y-1 flex-col gap-4 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white ">
-            {' '}
             <div className="flex items-end gap-4 border-b-2 border-neutral-700 pb-2">
-              <FaDesktop className="gradient-background h-20 w-20 rounded-xl fill-white p-2" />
-
-              <h3 className="text-3xl font-bold text-white">
-                {' '}
-                Front End Skills
+              <FaDesktop className="gradient-background h-12 w-12 rounded-xl fill-white p-2 md:h-20 md:w-20" />
+              <h3 className="text-2xl font-bold text-white md:text-3xl">
+                Front end skills
               </h3>
             </div>
             <p className="  text-left font-normal text-neutral-400 ">
@@ -141,12 +138,10 @@ export default function Skills() {
 
         <li className="gradient-background rounded-lg outline-offset-4  ">
           <div className=" flex h-full w-full -translate-x-1 -translate-y-1 flex-col gap-4 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white ">
-            {' '}
             <div className="flex items-end gap-4 border-b-2 border-neutral-700 pb-2">
-              <FaDatabase className="gradient-background h-20 w-20 rounded-xl fill-white p-2 " />
-              <h3 className="text-3xl font-bold text-white">
-                {' '}
-                Back End Skills
+              <FaDatabase className="gradient-background h-12 w-12 rounded-xl fill-white p-2 md:h-20 md:w-20" />
+              <h3 className="text-2xl font-bold text-white md:text-3xl">
+                Back end skills
               </h3>
             </div>
             <p className=" text-left font-normal text-neutral-400 ">
@@ -169,8 +164,10 @@ export default function Skills() {
         <li className="gradient-background rounded-lg outline-offset-4  ">
           <div className=" flex h-full w-full -translate-x-1 -translate-y-1 flex-col gap-4 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white ">
             <div className="flex items-end gap-4 border-b-2 border-neutral-700 pb-2">
-              <FaCodeBranch className="gradient-background h-20 w-20 rounded-xl fill-white p-2" />
-              <h3 className="text-3xl font-bold text-white">Other skills</h3>
+              <FaCodeBranch className="gradient-background h-12 w-12 rounded-xl fill-white p-2 md:h-20 md:w-20" />
+              <h3 className="text-2xl font-bold text-white md:text-3xl">
+                Other skills
+              </h3>
             </div>
             <p className=" text-left font-normal text-neutral-400 ">
               MVC, Communication, Problem Solving, ES6 Modules

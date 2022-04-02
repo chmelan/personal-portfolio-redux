@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className=" bg-neutral-900 py-6">
       {/* Content */}
       <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-16 px-6">
-        <h2 className=" text-5xl font-bold  leading-normal text-white">
+        <h2 className=" text-3xl font-bold leading-normal  text-white md:text-5xl">
           Ready to make something fun together?
           <br />
           <Link href="/contact">
@@ -15,7 +15,7 @@ export default function Footer() {
           <br />
         </h2>
 
-        <div className=" flex justify-between md:flex-row">
+        <div className=" flex flex-col items-start md:flex-row md:flex-row md:justify-between">
           <div className="flex justify-center space-x-6 ">
             <a
               href="https://www.linkedin.com/in/nick-chmela/"
@@ -47,7 +47,9 @@ export default function Footer() {
           </div>
 
           <p className="text-center  text-sm text-neutral-400">
-            &copy; 2022 Nick Chmela<br></br>Made with ❤️ by me.
+            &copy; 2022 Nick Chmela<span className="md:hidden"> | </span>
+            <br className="hidden md:inline" />
+            Made with ❤️ by me.
           </p>
         </div>
       </div>

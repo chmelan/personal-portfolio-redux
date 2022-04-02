@@ -13,6 +13,7 @@ interface postDataType {
   date: any
   title: string
   tags: string[]
+  icon: string
   description: string
   featuredImage: string
   featuredImageAlt: string

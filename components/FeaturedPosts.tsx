@@ -20,10 +20,12 @@ export default function FeaturedPosts({ postData }: FeaturedPostsProps) {
       <div className="mx-auto w-full max-w-screen-xl px-7 ">
         <div className="grid  gap-8 md:grid-cols-12 ">
           <div className=" col-span-6 flex flex-col gap-6">
-            <h2 className="text-gradient-no-hover text-2xl font-bold  text-neutral-500">
+            <h2 className="text-gradient-no-hover text-xl font-bold md:text-2xl  ">
               BLOG POSTS
             </h2>
-            <p className=" text-6xl font-bold text-white ">Recent thoughts</p>
+            <p className=" text-4xl text-6xl font-bold text-white ">
+              Recent thoughts
+            </p>
             <div className="flex">
               <Link href="/posts">
                 <a className="gradient-background mt-4 rounded-lg  outline-offset-4 ">
@@ -37,34 +39,32 @@ export default function FeaturedPosts({ postData }: FeaturedPostsProps) {
           {/* posts */}
           <article className="col-span-6">
             {postData.map((post) => (
-              <article>
-                <a key={post.id}>
-                  <div className=" col-span-3  flex flex-col  justify-between gap-4 p-4 pt-12">
-                    <p className="justify-self-start text-lg font-semibold  uppercase text-neutral-400 text-neutral-600">
-                      <Date dateString={post.date} />
-                    </p>
-                    <h3 className="justify-self-start text-3xl font-bold text-white">
-                      {post.title}
-                    </h3>
-                    <div className="items end flex justify-between gap-4 justify-self-end">
-                      {/* Button */}
-                      <Link href={`/posts/${post.id}`}>
-                        <a className=" group flex items-center justify-center gap-2   pt-4 text-lg  font-medium text-neutral-200">
-                          Continue reading
-                          <span className=" transition group-hover:translate-x-1 group-active:translate-x-5">
-                            <FaArrowRight />
-                          </span>
-                        </a>
-                      </Link>
-                    </div>
-                    <hr className="border-neutral-700" />
+              <article key={post.id}>
+                <div className=" col-span-3  flex flex-col  justify-between gap-4 pt-12 md:p-4">
+                  <p className="justify-self-start text-lg font-semibold  uppercase text-neutral-400 ">
+                    <Date dateString={post.date} />
+                  </p>
+                  <h3 className="justify-self-start text-3xl font-bold text-white">
+                    {post.title}
+                  </h3>
+                  <div className="items end flex justify-between gap-4 justify-self-end">
+                    {/* Button */}
+                    <Link href={`/posts/${post.id}`}>
+                      <a className=" group flex items-center justify-center gap-2   pt-4 text-lg  font-medium text-neutral-200">
+                        Continue reading
+                        <span className=" transition group-hover:translate-x-1 group-active:translate-x-5">
+                          <FaArrowRight />
+                        </span>
+                      </a>
+                    </Link>
                   </div>
-                </a>
+                  <hr className="border-neutral-700" />
+                </div>
               </article>
             ))}
           </article>
         </div>
-        <hr className="mt-24 border-2 border-neutral-800" />
+        <hr className="mt-24 hidden border-2 border-neutral-800 md:block" />
       </div>
     </section>
   )

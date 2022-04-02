@@ -33,18 +33,18 @@ export default function Post({ postData }: any) {
         <h1 className="  text-4xl font-bold text-neutral-900">
           {postData.title}
         </h1>
-        <p>
+        <ul>
           {postData.tags.map((tag: string, i: number, tags: string[]) => {
             return (
-              <span key={tag} className="font-semibold text-neutral-500">
-                {tag + ' '}
-                {tags.length - 1 === i ? null : (
-                  <span className="text-neutral-400">• </span>
-                )}
-              </span>
+              <li
+                key={tag}
+                className=" inline rounded-full bg-neutral-200 px-2 py-1 text-sm font-normal text-neutral-800"
+              >
+                {tag}
+              </li>
             )
           })}
-        </p>
+        </ul>
         <div
           className="prose self-center pt-32 text-left"
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}

@@ -18,8 +18,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <li className="grid grid-cols-3 items-center gap-8 py-8">
-      <div className="gradient-background-opposite relative col-span-2 h-full rounded-xl">
+    <li className="grid  gap-8 md:grid-cols-3 md:items-center md:py-8">
+      <div className="gradient-background-opposite relative aspect-square rounded-xl md:col-span-2 md:aspect-auto md:h-full">
         <Image
           src={props.project.imageURL}
           alt="some pic"
@@ -31,11 +31,11 @@ export default function ProjectCard(props: ProjectCardProps) {
       <div
         className={
           props.reversed
-            ? 'flex flex-col gap-4 py-32 pr-8 md:row-start-1 '
-            : 'flex flex-col gap-4  py-32 pl-8'
+            ? 'flex flex-col gap-4 md:row-start-1 md:py-32 md:pr-8 '
+            : 'flex flex-col gap-4  py-32 md:py-32 md:pl-8'
         }
       >
-        <h3 className="text-3xl font-bold text-neutral-900">
+        <h3 className=" text-2xl font-bold text-neutral-900 md:text-3xl">
           {props.project.title}
         </h3>
         <p>
@@ -53,7 +53,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           )}
         </p>
 
-        <p className="text-base  text-neutral-400  ">
+        <p className="text-base  text-neutral-500  ">
           {props.project.description}
         </p>
 
@@ -78,7 +78,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           >
             <FaGithub
               title="View source code on GitHub"
-              className="h-9 w-9 fill-neutral-500 p-1"
+              className="h-14 w-14 fill-neutral-500 p-1 md:h-9 md:w-9"
             />
           </a>
         </div>

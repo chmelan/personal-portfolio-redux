@@ -13,18 +13,18 @@ export default function FeaturedProjects(props: FeaturedProjectsProps) {
       {/* Content */}
       <div className="display mx-auto flex w-full max-w-screen-xl flex-col items-center gap-8 px-6">
         <div className="flex max-w-2xl flex-col gap-6 lg:text-center">
-          <h2 className="text-gradient text-2xl font-bold  text-neutral-500">
+          <h2 className="text-gradient text-xl font-bold md:text-2xl  ">
             FEATURED PROJECTS
           </h2>
-          <p className=" text-6xl font-bold text-neutral-900 ">
+          <p className=" text-4xl font-bold text-neutral-900 md:text-6xl ">
             Check out my favorite work below!
           </p>
         </div>
 
         {/* projects grid */}
 
-        <ul className=" grid h-[40em] w-full grid-flow-row grid-rows-2 gap-4 lg:grid-cols-12">
-          <li className="gradient-background-opposite relative col-span-3 row-span-2 h-full rounded-xl">
+        <ul className=" hidden h-[40em] w-full gap-4 md:grid   lg:grid-cols-12">
+          <li className="gradient-background-opposite relative h-full rounded-xl md:col-span-3 md:row-span-2">
             <Image
               src="/images/apm-transparent.png "
               alt="Nick hiking in the wintery woods of Maine"
@@ -32,21 +32,21 @@ export default function FeaturedProjects(props: FeaturedProjectsProps) {
               objectFit="cover"
             />
           </li>
-          <li className="gradient-background-opposite relative col-span-6 row-span-2 rounded-xl">
+          <li className="gradient-background-opposite relative rounded-xl md:col-span-6 md:row-span-2">
             <Image
               src="/images/ns-transparent.png"
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
             />
           </li>
-          <li className="gradient-background-opposite relative col-span-3 row-span-1 rounded-xl">
+          <li className="gradient-background-opposite relative rounded-xl md:col-span-3 md:row-span-1">
             <Image
               src="/images/cc-transparent.png"
               alt="Nick hiking in the wintery woods of Maine"
               layout="fill"
             />
           </li>
-          <li className="gradient-background-opposite relative col-span-3 row-span-1 rounded-xl">
+          <li className="gradient-background-opposite relative rounded-xl md:col-span-3 md:row-span-1">
             <Image
               src="/images/mn-transparent.png"
               alt="Nick hiking in the wintery woods of Maine"

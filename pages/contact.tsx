@@ -3,10 +3,10 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 export default function Contact() {
   return (
     <div className="mx-auto w-full max-w-screen-xl px-6 pb-32">
-      <div className="grid md:grid-cols-2 ">
+      <div className="grid gap-8 md:grid-cols-2">
         {/* Left side */}
         <div className="flex max-w-xl flex-col gap-8 pt-4 md:pt-0 md:pr-4 ">
-          <h1 className="  text-5xl font-bold text-neutral-900 ">
+          <h1 className="  text-4xl font-bold text-neutral-900 md:text-5xl ">
             Get in touch!
           </h1>
           <p className="text-xl text-neutral-500 ">
@@ -26,7 +26,7 @@ export default function Contact() {
               className="gradient-background h-10 w-10  rounded-xl p-2 text-white"
               aria-hidden="true"
             />
-            <span className="text-2xl font-bold text-neutral-600">
+            <span className=" text-xl font-bold text-neutral-600 md:text-2xl">
               /in/nick-chmela/
             </span>
           </a>
@@ -40,7 +40,7 @@ export default function Contact() {
               className="gradient-background h-10 w-10  rounded-xl p-2 text-white"
               aria-hidden="true"
             />
-            <span className="text-2xl font-bold text-neutral-600">
+            <span className=" text-xl font-bold text-neutral-600 md:text-2xl">
               github.com/chmelan/
             </span>
           </a>
@@ -113,7 +113,7 @@ export default function Contact() {
               required
             ></textarea>
             <button
-              className="gradient-background mt-4 w-full rounded-lg outline-offset-4"
+              className="gradient-background mt-4 ml-[4px] w-full rounded-lg outline-offset-4"
               type="submit"
             >
               <span className="  block -translate-x-1 -translate-y-1 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white transition-transform  hover:-translate-x-1.5 hover:-translate-y-1.5 active:-translate-x-0 active:-translate-y-0">

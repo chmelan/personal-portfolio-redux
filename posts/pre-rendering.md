@@ -1,6 +1,7 @@
 ---
 title: 'Coming Soon!'
 date: '2022-03-01'
+icon: '🤙'
 featuredImage: '/images/coming-soon.jpg'
 featuredImageAlt: 'call me emoji'
 tags: [coming soon]

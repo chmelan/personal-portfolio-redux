@@ -18,8 +18,8 @@ export default function ButtonSecondary({
     <a
       className={
         isGradient
-          ? ' text-gradient group flex items-center justify-center gap-2 py-4 px-6 text-lg font-bold '
-          : ' group flex items-center justify-center gap-2 py-4 px-6 text-lg font-bold  text-neutral-900'
+          ? ' text-gradient group flex items-center justify-center gap-2 py-4  text-lg font-bold '
+          : ' group flex items-center justify-center gap-2 py-4 text-lg font-bold  text-neutral-900'
       }
       href={href}
       {...secondaryButtonProps}
@@ -34,8 +34,8 @@ export default function ButtonSecondary({
       <a
         className={
           isGradient
-            ? ' text-gradient group flex items-center justify-center gap-2 py-4 px-6 text-lg font-bold '
-            : ' group flex items-center justify-center gap-2 py-4 px-6 text-lg font-bold  text-neutral-900'
+            ? ' text-gradient group flex items-center justify-center gap-2 py-4  text-lg font-bold '
+            : ' group flex items-center justify-center gap-2 py-4  text-lg font-bold  text-neutral-900'
         }
         {...secondaryButtonProps}
       >
