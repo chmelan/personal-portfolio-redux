@@ -1,5 +1,5 @@
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-
+import ContactForm from '../components/ContactForm'
 export default function Contact() {
   return (
     <div className="mx-auto w-full max-w-screen-xl px-6 pb-32">
@@ -47,80 +47,7 @@ export default function Contact() {
         </div>
         {/* Right side */}
         <div>
-          <form
-            name="contact"
-            action=""
-            method="post"
-            className="flex flex-col items-start justify-start "
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <label
-              htmlFor="name"
-              className="block text-lg font-semibold text-neutral-700 "
-            >
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              autoComplete="name"
-              className=" block w-full rounded-md bg-neutral-200 py-3 px-4 text-neutral-800"
-              placeholder="name"
-              required
-            ></input>
-            <label
-              htmlFor="email"
-              className="mt-4 block text-lg font-semibold text-neutral-700"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              autoComplete="email"
-              className=" block w-full rounded-md bg-neutral-200 py-3  px-4 text-neutral-800"
-              placeholder="email"
-              required
-            ></input>
-            <label
-              htmlFor="phone"
-              className="mt-4 block text-lg font-semibold text-neutral-700"
-            >
-              Phone
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone "
-              autoComplete="tel"
-              className=" block w-full rounded-md bg-neutral-200 py-3 px-4 text-neutral-800"
-              placeholder="phone"
-            ></input>
-            <label
-              htmlFor="message"
-              className="mt-4 block text-lg font-semibold text-neutral-700"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              autoComplete="message"
-              className=" block w-full rounded-md bg-neutral-200 py-3 px-4 text-neutral-800"
-              placeholder="message"
-              required
-            ></textarea>
-            <button
-              className="gradient-background mt-4 ml-[4px] w-full rounded-lg outline-offset-4"
-              type="submit"
-            >
-              <span className="  block -translate-x-1 -translate-y-1 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white transition-transform  hover:-translate-x-1.5 hover:-translate-y-1.5 active:-translate-x-0 active:-translate-y-0">
-                Send message!
-              </span>
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </div>
