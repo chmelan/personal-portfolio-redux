@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/Layout'
+import { siteTitle } from '../components/Layout'
 import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/Date'
 import PostCard from '../components/PostCard'
 
 interface postCardProps {
@@ -28,7 +26,7 @@ export default function Posts({ allPostsData }: any) {
   return (
     <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Posts | {siteTitle}</title>
       </Head>
 
       <div className="display mx-auto mb-48 flex w-full max-w-screen-xl flex-col items-center gap-8 px-6">

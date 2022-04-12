@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import { getSortedPostsData } from '../lib/posts'
-
+import { siteTitle } from '../components/Layout'
 import HomeHero from '../components/HomeHero'
 import HomeAbout from '../components/HomeAbout'
 import FeaturedPosts from '../components/FeaturedPosts'
@@ -31,6 +32,9 @@ export async function getStaticProps() {
 const Home: NextPage = ({ postsData }: any) => {
   return (
     <>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
       <HomeHero />
       <FeaturedProjects id="projects" />
       <HomeAbout />

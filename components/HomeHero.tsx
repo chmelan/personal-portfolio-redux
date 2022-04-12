@@ -27,7 +27,7 @@ export default function HomeHero() {
           <Image
             layout="fill"
             className=" rounded-full "
-            src="/images/main_portrait.jpg"
+            src="/images/new_portrait.jpg"
             alt="nick smiling"
           />
         </div>

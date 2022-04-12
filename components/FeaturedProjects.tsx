@@ -1,5 +1,4 @@
 import ProjectCard from './ProjectCard'
-import etchImage from '../resources/nick-chmela-software-developer-hiking.jpg'
 import { featuredProjects } from '../lib/projects.js'
 import Image from 'next/image'
 
@@ -26,8 +25,8 @@ export default function FeaturedProjects(props: FeaturedProjectsProps) {
         <ul className=" hidden h-[40em] w-full gap-4 md:grid   lg:grid-cols-12">
           <li className="gradient-background-opposite relative h-full rounded-xl md:col-span-3 md:row-span-2">
             <Image
-              src="/images/apm-transparent.png "
-              alt="Nick hiking in the wintery woods of Maine"
+              src="/images/apm-transparent.png"
+              alt="Alchemy Property Management Screenshots"
               layout="fill"
               objectFit="cover"
             />
@@ -35,21 +34,21 @@ export default function FeaturedProjects(props: FeaturedProjectsProps) {
           <li className="gradient-background-opposite relative rounded-xl md:col-span-6 md:row-span-2">
             <Image
               src="/images/ns-transparent.png"
-              alt="Nick hiking in the wintery woods of Maine"
+              alt="Nik Sparlin Portfolio Screenshots"
               layout="fill"
             />
           </li>
           <li className="gradient-background-opposite relative rounded-xl md:col-span-3 md:row-span-1">
             <Image
               src="/images/cc-transparent.png"
-              alt="Nick hiking in the wintery woods of Maine"
+              alt="Christmas Champs Screenshots"
               layout="fill"
             />
           </li>
           <li className="gradient-background-opposite relative rounded-xl md:col-span-3 md:row-span-1">
             <Image
               src="/images/mn-transparent.png"
-              alt="Nick hiking in the wintery woods of Maine"
+              alt="Minders Nursery Screenshots"
               layout="fill"
             />
           </li>

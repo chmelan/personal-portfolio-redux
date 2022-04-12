@@ -2,6 +2,7 @@ import {
   FaReact,
   FaDatabase,
   FaHtml5,
+  FaCss3Alt,
   FaElementor,
   FaNpm,
   FaNodeJs,
@@ -28,25 +29,30 @@ const frontEndSkills = [
     Icon: FaReact,
   },
   {
-    name: 'TailwindCSS',
-    color: 'fill-[#15b8c5]',
-    Icon: SiTailwindcss,
-  },
-  {
     name: 'HTML',
     color: 'fill-[#f75421]',
     Icon: FaHtml5,
+  },
+  {
+    name: 'CSS',
+    color: 'fill-[#2862e9]',
+    Icon: FaCss3Alt,
+  },
+  {
+    name: 'TypeScript',
+    color: 'fill-[#3178c6]',
+    Icon: SiTypescript,
+  },
+  {
+    name: 'TailwindCSS',
+    color: 'fill-[#15b8c5]',
+    Icon: SiTailwindcss,
   },
 
   {
     name: 'Elementor',
     color: 'fill-[#cf315f]',
     Icon: FaElementor,
-  },
-  {
-    name: 'TypeScript',
-    color: 'fill-[#3178c6]',
-    Icon: SiTypescript,
   },
 ]
 
