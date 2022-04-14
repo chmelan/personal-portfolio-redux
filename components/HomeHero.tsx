@@ -12,7 +12,7 @@ export default function HomeHero() {
           <h1 className="  text-4xl font-bold text-neutral-900 md:text-7xl ">
             I’m a curious{' '}
             <span className="text-gradient-no-hover block md:inline">full stack developer</span>{' '}
-            <br /> who can’t stop tinkering.
+            <br className="hidden md:inline" /> who can’t stop tinkering.
           </h1>
           <p className=" text-xl text-neutral-600 md:text-2xl ">
             I build full stack applications with React, Tailwind CSS, and Node
