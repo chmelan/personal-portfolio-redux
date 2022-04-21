@@ -23,12 +23,12 @@ export default function FeaturedPosts({ postData }: FeaturedPostsProps) {
             <h2 className="text-gradient-no-hover text-xl font-bold md:text-2xl  ">
               BLOG POSTS
             </h2>
-            <p className=" text-4xl text-6xl font-bold text-white ">
+            <p className=" text-6xl font-bold text-white ">
               Recent thoughts
             </p>
-            <div className="flex">
+            <div className=" md:flex hidden">
               <Link href="/posts">
-                <a className="gradient-background mt-4 rounded-lg  outline-offset-4 ">
+                <a className=" gradient-background mt-4 rounded-lg  outline-offset-4 ">
                   <span className="  block -translate-x-1 -translate-y-1 rounded-lg bg-white py-4 px-6 text-lg font-bold text-neutral-900 transition-transform  hover:-translate-x-1.5 hover:-translate-y-1.5 active:-translate-x-0 active:-translate-y-0">
                     View all posts
                   </span>
@@ -65,6 +65,15 @@ export default function FeaturedPosts({ postData }: FeaturedPostsProps) {
           </article>
         </div>
         <hr className="mt-24 hidden border-2 border-neutral-800 md:block" />
+        <div className=" flex md:hidden pt-4" >
+              <Link href="/posts">
+                <a className=" gradient-background mt-4 rounded-lg  outline-offset-4 ">
+                  <span className="  block -translate-x-1 -translate-y-1 rounded-lg bg-white py-4 px-6 text-lg font-bold text-neutral-900 transition-transform  hover:-translate-x-1.5 hover:-translate-y-1.5 active:-translate-x-0 active:-translate-y-0">
+                    View all posts
+                  </span>
+                </a>
+              </Link>
+            </div>
       </div>
     </section>
   )

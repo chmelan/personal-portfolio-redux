@@ -35,10 +35,10 @@ const Home: NextPage = ({ postsData }: any) => {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <HomeHero />
+      <HomeHero /> 
       <FeaturedProjects id="projects" />
       <HomeAbout />
-      <Skills />
+     <Skills />
       <FeaturedPosts postData={postsData} />
     </>
   )
