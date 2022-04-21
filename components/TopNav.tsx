@@ -34,7 +34,7 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
                   </a>
                 </Link>
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className=" focus-ring-inset inline-flex items-center justify-center rounded-md p-2 text-neutral-700 hover:bg-neutral-600 focus:outline-none focus:ring-2 focus:ring-white ">
+                  <Popover.Button className=" focus-ring-inset inline-flex items-center justify-center rounded-md p-2 text-neutral-700 hover:bg-neutral-600 focus:outline-none focus:ring-2 focus:bg-neutral-600 ">
                     <span className="sr-only">Open main menu</span>
                     <MenuIcon className="h-8 w-8" aria-hidden="true" />
                   </Popover.Button>

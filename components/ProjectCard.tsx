@@ -42,10 +42,10 @@ export default function ProjectCard(props: ProjectCardProps) {
           {props.project.techStack.map(
             (tech: string, i: number, techStack: string[]) => {
               return (
-                <span key={tech} className="font-bold text-neutral-400">
+                <span key={tech} className="font-bold text-neutral-500">
                   {tech + ' '}
                   {techStack.length - 1 === i ? null : (
-                    <span className="text-neutral-400">• </span>
+                    <span className="text-neutral-500">• </span>
                   )}
                 </span>
               )

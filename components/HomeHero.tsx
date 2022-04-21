@@ -1,6 +1,5 @@
 import Button from './Button'
 import ButtonSecondary from './ButtonSecondary'
-import { FaEye } from 'react-icons/fa'
 import Image from 'next/image'
 
 export default function HomeHero() {
@@ -27,7 +26,7 @@ export default function HomeHero() {
           <Image
             layout="fill"
             className=" rounded-full "
-            src="/images/new_portrait.jpg"
+            src="/images/main_portrait.jpg"
             alt="nick smiling"
           />
         </div>
