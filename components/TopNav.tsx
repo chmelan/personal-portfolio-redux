@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 import { IoColorPalette } from 'react-icons/io5'
 
@@ -62,14 +63,33 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
                 )}
               </div>
             </div>
-            <div className="hidden md:flex">
+            <div className="hidden md:flex  justify-center space-x-6">
               <button
                 title="Update color palette"
                 aria-label="Update color palette"
                 onClick={() => setRandomHue()}
               >
-                <IoColorPalette className="inline-flex h-8 w-8 items-center fill-neutral-700 hover:animate-pulse " />
+                <IoColorPalette className=" transition-colors	 inline-flex h-8 w-8 items-center fill-neutral-700 hover:fill-neutral-500 " />
               </button>
+
+              <a
+                href="https://www.linkedin.com/in/nick-chmela/"
+                className="transition-colors inline-flex items-center text-neutral-700 hover:text-neutral-500"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="sr-only">Linked In</span>
+                <FaLinkedinIn className="h-8 w-8" aria-hidden="true" />
+              </a>
+              <a
+                href="https://github.com/chmelan/"
+                className="transition-colors inline-flex  items-center text-neutral-700 hover:text-neutral-500"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="sr-only">GitHub</span>
+                <FaGithub className="h-8 w-8" aria-hidden="true" />
+              </a>
             </div>
           </nav>
 
@@ -104,14 +124,14 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
                     </Popover.Button>
                   </div>
                 </div>
-                <div className="flex flex-col items-start space-y-1  pt-2 pb-3">
+                <div className="flex flex-col items-end space-y-1 p-4 ">
                   {navigation.map((link) =>
                     link.external ? (
                       <Popover.Button>
                         <a
                           key={link.name}
                           href={link.href}
-                          className="block   px-6 py-2 text-base font-medium text-neutral-700 hover:bg-gray-100 hover:text-neutral-600 focus:bg-neutral-100"
+                          className="block  px-6 py-2 text-xl font-medium text-neutral-700 hover:bg-gray-100 hover:text-neutral-600 focus:bg-neutral-100"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -121,22 +141,40 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
                     ) : (
                       <Popover.Button>
                         <Link key={link.name} href={link.href}>
-                          <a className="block  px-6 py-2 text-base font-medium text-neutral-700 hover:bg-gray-100 hover:text-neutral-600">
+                          <a className="block  px-6 py-2 text-xl  font-medium text-neutral-700 hover:bg-gray-100 hover:text-neutral-600">
                             {link.name}
                           </a>
                         </Link>
                       </Popover.Button>
                     )
                   )}
-                  <div className="px-6">
+                  <div className="px-6 flex justify-end items-center space-x-6  pt-6 pb-2 border-t-neutral-200 border-t-[1px] w-full">
                     <Popover.Button>
                       <IoColorPalette
                         title="Update color palette"
                         aria-label="Update color palette"
                         onClick={() => setRandomHue()}
-                        className="inline-flex h-8 w-8 items-center fill-neutral-700 hover:animate-pulse "
+                        className="transition-colors  h-8 w-8  fill-neutral-600 hover:fill-neutral-500"
                       />
                     </Popover.Button>
+                    <a
+                      href="https://www.linkedin.com/in/nick-chmela/"
+                      className="transition-colors  text-neutral-600 hover:text-neutral-500"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="sr-only">Linked In</span>
+                      <FaLinkedinIn className="h-8 w-8" aria-hidden="true" />
+                    </a>
+                    <a
+                      href="https://github.com/chmelan/"
+                      className="transition-colors  text-neutral-600 hover:text-neutral-500"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="sr-only">GitHub</span>
+                      <FaGithub className="h-8 w-8" aria-hidden="true" />
+                    </a>
                   </div>
                 </div>
               </div>
