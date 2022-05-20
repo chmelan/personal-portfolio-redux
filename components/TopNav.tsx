@@ -13,7 +13,7 @@ type HeaderProps = {
 const navigation = [
   // { name: 'About', href: '/about' },
   // { name: 'Projects', href: '/projects' },
-  { name: 'Resume', href: '/Nick Chmela Resume.pdf', external: true },
+  { name: 'Resume', href: '/Nick Chmela Resume.docx', external: true },
   { name: 'Writing', href: '/posts' },
   { name: 'Contact', href: '/contact' },
 ]
