@@ -10,7 +10,9 @@ export default function HomeHero() {
         <div className="flex flex-col items-start justify-center gap-6">
           <h1 className="  text-4xl font-bold text-neutral-900 md:text-7xl ">
             I’m a curious{' '}
-            <span className="text-gradient-no-hover block md:inline">full stack developer</span>{' '}
+            <span className="text-gradient-no-hover block md:inline">
+              full stack developer
+            </span>{' '}
             <br className="hidden md:inline" /> who can’t stop tinkering.
           </h1>
           <p className=" text-xl text-neutral-600 md:text-2xl ">
