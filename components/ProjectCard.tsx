@@ -42,7 +42,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           {props.project.techStack.map(
             (tech: string, i: number, techStack: string[]) => {
               return (
-                <span key={tech} className="font-bold text-neutral-500">
+                <span key={tech} className="font-bold text-neutral-600">
                   {tech + ' '}
                   {techStack.length - 1 === i ? null : (
                     <span className="text-neutral-500">• </span>
@@ -53,7 +53,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           )}
         </p>
 
-        <p className="text-base  text-neutral-500  ">
+        <p className="text-base  text-neutral-700  ">
           {props.project.description}
         </p>
 
@@ -78,7 +78,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           >
             <FaGithub
               title="View source code on GitHub"
-              className="h-14 w-14 fill-neutral-500 p-1 md:h-9 md:w-9"
+              className="h-14 w-14 fill-neutral-600 p-1 md:h-10 md:w-10"
             />
           </a>
         </div>
