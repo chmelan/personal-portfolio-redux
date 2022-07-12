@@ -124,7 +124,7 @@ export default function Skills() {
                 Front end skills
               </h3>
             </div>
-            <p className="  text-left font-normal text-neutral-400 ">
+            <p className="  text-left font-normal text-neutral-300 ">
               Accessibility, Design, Copywriting, DOM Manipulation
             </p>
             <ul className="grid grid-cols-2  gap-2 ">
@@ -150,7 +150,7 @@ export default function Skills() {
                 Back end skills
               </h3>
             </div>
-            <p className=" text-left font-normal text-neutral-400 ">
+            <p className=" text-left font-normal text-neutral-300 ">
               User Authentication, DB Architecture, REST API, CRUD
             </p>
             <ul className="grid grid-cols-2  gap-2 ">
@@ -175,7 +175,7 @@ export default function Skills() {
                 Other skills
               </h3>
             </div>
-            <p className=" text-left font-normal text-neutral-400 ">
+            <p className=" text-left font-normal text-neutral-300 ">
               MVC, Communication, Problem Solving, ES6 Modules
             </p>
             <ul className="grid grid-cols-2  gap-2 ">
