@@ -42,7 +42,7 @@ export default function PostCard({
               </h3>
             </div>
           </div>
-          <p className="  text-left text-base font-normal text-neutral-400 ">
+          <p className="  text-left text-base font-normal text-neutral-300 ">
             {description}
           </p>{' '}
           <div className="grid grid-cols-2">
