@@ -10,7 +10,7 @@ export default function FeaturedProjects(props: FeaturedProjectsProps) {
   return (
     <div id={props.id} className="flex items-center py-28">
       {/* Content */}
-      <div className="display mx-auto flex w-full max-w-screen-xl flex-col items-center gap-8 px-6">
+      <div className="display mx-auto flex w-full max-w-screen-xl flex-col items-center gap-12 px-6">
         <div className="flex max-w-2xl flex-col gap-6 lg:text-center">
           <h2 className="text-gradient text-xl font-bold md:text-2xl  ">
             FEATURED PROJECTS
