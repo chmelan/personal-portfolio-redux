@@ -40,7 +40,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     })
   }
   return (
-    <div>
+    <div className="relative">
       <Head>
         <meta
           name="description"
@@ -73,9 +73,21 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
+
+      <a
+        className=" gradient-background rounded-lg  outline-offset-4 z-50 absolute top-0 m-6 left-[-10000px] focus:left-0"
+        href="#main-content"
+      >
+        <span className="  block -translate-x-1 -translate-y-1 rounded-lg bg-neutral-900 py-4 px-6 text-lg font-semibold text-white transition-transform  hover:-translate-x-1.5 hover:-translate-y-1.5 active:-translate-x-0 active:-translate-y-0">
+          Skip Navigation
+        </span>
+      </a>
+
       <TopNav setRandomHue={setRandomHue} />
 
-      <main className="pt-24 md:pt-48">{children}</main>
+      <main id="main-content" className="pt-24 md:pt-48">
+        {children}
+      </main>
       <Footer />
     </div>
   )
