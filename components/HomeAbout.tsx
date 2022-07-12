@@ -15,13 +15,13 @@ export default function HomeAbout() {
             </p>
           </div>
           <div className="col-span-5">
-            <p className=" text-xl text-neutral-500 md:text-2xl ">
+            <p className=" text-xl text-neutral-700 md:text-2xl ">
               In my free time, you can find me
-              <span className="text-neutral-700 "> climbing cool rocks⛰️</span>,
+              <span className="text-neutral-800 "> climbing cool rocks⛰️</span>,
               playing with
-              <span className="text-neutral-700"> toy space ships🚀</span>, or
+              <span className="text-neutral-800"> toy space ships🚀</span>, or
               hanging out with
-              <span className="text-neutral-700  "> my dog🐕</span>. I'm at my
+              <span className="text-neutral-800  "> my dog🐕</span>. I'm at my
               happiest when I’m{' '}
               <a
                 href="https://www.youtube.com/channel/UCEbflS8E03LQdxMEW0nvx1g"
