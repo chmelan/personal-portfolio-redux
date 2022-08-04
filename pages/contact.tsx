@@ -25,12 +25,12 @@ export default function Contact() {
 
             <a
               href="https://www.linkedin.com/in/nick-chmela/"
-              className="flex items-center gap-4"
+              className="flex items-center gap-4 outline-offset-4 inline"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedinIn
-                className="gradient-background h-10 w-10  rounded-xl p-2 text-white"
+                className="gradient-background h-10 w-10  rounded-xl p-2 text-white "
                 aria-hidden="true"
               />
               <span className=" text-xl font-bold text-neutral-600 md:text-2xl">
@@ -39,12 +39,12 @@ export default function Contact() {
             </a>
             <a
               href="https://github.com/chmelan/"
-              className="flex items-center gap-4"
+              className="flex items-center gap-4 outline-offset-4"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaGithub
-                className="gradient-background h-10 w-10  rounded-xl p-2 text-white"
+                className="gradient-background h-10 w-10  rounded-xl p-2 text-white "
                 aria-hidden="true"
               />
               <span className=" text-xl font-bold text-neutral-600 md:text-2xl">

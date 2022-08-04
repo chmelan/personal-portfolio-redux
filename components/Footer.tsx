@@ -10,16 +10,18 @@ export default function Footer() {
           Ready to make something fun together?
           <br />
           <Link href="/contact">
-            <a className="text-gradient">Let's get in touch!</a>
+            <a className="text-gradient outline-none focus:underline decoration-white">
+              Let's get in touch!
+            </a>
           </Link>
           <br />
         </h2>
 
-        <div className=" flex flex-col items-start md:flex-row md:flex-row md:justify-between">
+        <div className=" flex flex-col items-start md:flex-row md:justify-between">
           <div className="flex justify-center space-x-6 ">
             <a
               href="https://www.linkedin.com/in/nick-chmela/"
-              className="text-white hover:text-neutral-700"
+              className="text-white hover:text-neutral-700 outline-offset-4	"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -28,7 +30,7 @@ export default function Footer() {
             </a>
             <a
               href="https://github.com/chmelan/"
-              className="text-white hover:text-neutral-700"
+              className="text-white hover:text-neutral-700 outline-offset-4	"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -36,10 +38,10 @@ export default function Footer() {
               <FaGithub className="h-10 w-10" aria-hidden="true" />
             </a>
             <Link href="/contact">
-              <a>
+              <a className="outline-offset-4	">
                 <span className="sr-only">Contact</span>
                 <FaRegEnvelope
-                  className="h-10 w-10 text-white hover:text-neutral-700"
+                  className="h-10 w-10 text-white hover:text-neutral-700 	"
                   aria-hidden="true"
                 />
               </a>

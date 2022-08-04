@@ -104,6 +104,7 @@ export default function ContactUs() {
         Full name<span className="text-red-500 dark:text-gray-50">*</span>
       </label>
       <input
+        autoFocus
         type="text"
         value={fullname}
         onChange={(e) => {

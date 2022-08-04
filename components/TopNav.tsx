@@ -30,7 +30,7 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
             <div className=" flex flex-1 items-end ">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <Link href="/">
-                  <a className="  text-2xl  font-semibold text-neutral-700">
+                  <a className="  text-2xl  font-semibold text-neutral-700 outline-offset-4">
                     Nick Chmela
                   </a>
                 </Link>
@@ -41,13 +41,13 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
                   </Popover.Button>
                 </div>
               </div>
-              <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
+              <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4 ">
                 {navigation.map((link) =>
                   link.external ? (
                     <a
                       key={link.name}
                       href={link.href}
-                      className=" text-md font-sans text-neutral-700 hover:text-neutral-600"
+                      className=" text-md font-sans text-neutral-700 hover:text-neutral-600 outline-offset-4"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -55,7 +55,7 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
                     </a>
                   ) : (
                     <Link key={link.name} href={link.href}>
-                      <a className=" text-md font-sans text-neutral-700  hover:text-neutral-600">
+                      <a className=" text-md font-sans text-neutral-700  hover:text-neutral-600 outline-offset-4">
                         {link.name}
                       </a>
                     </Link>
@@ -68,13 +68,14 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
                 title="Update color palette"
                 aria-label="Update color palette"
                 onClick={() => setRandomHue()}
+                className="outline-offset-4"
               >
                 <IoColorPalette className=" transition-colors	 inline-flex h-8 w-8 items-center fill-neutral-700 hover:fill-neutral-500 " />
               </button>
 
               <a
                 href="https://www.linkedin.com/in/nick-chmela/"
-                className="transition-colors inline-flex items-center text-neutral-700 hover:text-neutral-500"
+                className="transition-colors inline-flex items-center text-neutral-700 hover:text-neutral-500 outline-offset-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -83,7 +84,7 @@ export default function TopNav({ setRandomHue }: HeaderProps) {
               </a>
               <a
                 href="https://github.com/chmelan/"
-                className="transition-colors inline-flex  items-center text-neutral-700 hover:text-neutral-500"
+                className="transition-colors inline-flex  items-center text-neutral-700 hover:text-neutral-500 outline-offset-4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
